@@ -1,0 +1,75 @@
+{
+  "compilerOptions": {
+    "target": "es2017",                               
+    "lib": ["ES6"],                                     
+    "experimentalDecorators": true,                
+    "emitDecoratorMetadata": true,                 
+    "module": "commonjs",                             
+    "rootDir": "./src",                                                                 
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/@types"
+    ],                               
+    "resolveJsonModule": true,                     
+    "allowJs": true,                               
+    "outDir": "./dist",                                
+    "esModuleInterop": true,                          
+    "forceConsistentCasingInFileNames": true,         
+    "strict": true,                                   
+    "skipLibCheck": true,
+    "baseUrl": ".",                               
+    "paths": {
+      "@bin/*": [
+        "./src/bin/*"
+      ],
+      "@domain/*": [
+        "./src/core/domain/*"
+      ],
+      "@providers/*": [
+        "./src/core/providers/*"
+      ],
+      "@repositories/*": [
+        "./src/core/repositories/*"
+      ],
+      "@routes/*": [
+        "./src/core/routes/*"
+      ],
+      "@services/*": [
+        "./src/core/services/*"
+      ],
+      "@useCases/*": [
+        "./src/core/useCases/*"
+      ],
+      "@documentation/*": [
+        "./src/documentation/*"
+      ],
+      "@config/*": [
+        "./src/infrastructure/config/*"
+      ],
+      "@databases/*": [
+        "./src/infrastructure/databases/*"
+      ],
+      "@jobs/*": [
+        "./src/infrastructure/jobs/*"
+      ],
+      "@middlewares/*": [
+        "./src/infrastructure/middlewares/*"
+      ],
+      "@modules/*": [
+        "./src/infrastructure/modules/*"
+      ],
+      "@utils/*": [
+        "./src/infrastructure/utils/*"
+      ],
+      "@shared/*": [
+        "./src/shared/*"
+      ],
+      "@templates/*": [
+        "./src/templates/*"
+      ],
+    },                             
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
